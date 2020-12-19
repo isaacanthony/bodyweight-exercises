@@ -1,0 +1,12 @@
+include:
+  - exercises.js
+  - favicon.ico
+  - index.html
+
+exclude:
+  - _config.yml
+  - .gitignore
+  - LICENSE
+  - Makefile
+  - README.md
+  - scrape.ipynb

@@ -6,7 +6,7 @@ jupyter-start:
 		-p 8888:8888 \
 		-v $(PWD):/home/jovyan \
 		jupyter/scipy-notebook
-	@sleep 1
+	@sleep 3
 	@make -s jupyter-token
 
 jupyter-token:
