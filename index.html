@@ -34,7 +34,12 @@
     };
 
     let slides = shuffle(EXERCISES).map((exercise) => {
-      return `<section><p>${exercise[0]}</p><img src="${exercise[1]}"></section>`;
+      return `
+        <section>
+          <p>${exercise[0]}</p>
+          <img src="${exercise[1]}" loading="lazy">
+        </section>
+      `;
     });
 
     document.querySelector('.slides').innerHTML += slides.join('');
